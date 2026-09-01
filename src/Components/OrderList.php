@@ -71,6 +71,6 @@ final class OrderList extends Component
         Gate::authorize('viewAny', Order::class);
         $teamId = data_get(auth()->user(), 'current_team_id') ?? data_get(auth()->user(), 'currentTeam.id');
 
-        return view('billing-orders-livewire::order-list', ['orders' => $query->execute($teamId === null ? null : (int) $teamId)]);
+        return view('module-billing-orders-livewire::order-list', ['orders' => $query->execute($teamId === null ? null : (int) $teamId)]);
     }
 }
