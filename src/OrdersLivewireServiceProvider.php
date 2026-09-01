@@ -14,7 +14,7 @@ final class OrdersLivewireServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'billing-orders-livewire');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'module-billing-orders-livewire');
         Livewire::component('module-billing-orders::order-list', OrderList::class);
         Livewire::component('module-billing-orders::order-support', OrderSupport::class);
         Livewire::component('module-billing-orders::quote-list', QuoteList::class);

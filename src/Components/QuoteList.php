@@ -39,7 +39,7 @@ final class QuoteList extends Component
         Gate::authorize('viewAny', Quote::class);
         $team = data_get(auth()->user(), 'current_team_id') ?? data_get(auth()->user(), 'currentTeam.id');
 
-        return view('billing-orders-livewire::quote-list', ['quotes' => Quote::query()->where('team_id', $team)->latest()->get()]);
+        return view('module-billing-orders-livewire::quote-list', ['quotes' => Quote::query()->where('team_id', $team)->latest()->get()]);
     }
 
     private function quote(): Quote
