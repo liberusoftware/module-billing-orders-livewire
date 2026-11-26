@@ -3,7 +3,7 @@
   "name": "module-billing-orders-livewire",
   "display_name": "Billing Orders Livewire",
   "description": "Livewire adapter for Billing Orders.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "category": "presentation",
   "provider": "Liberu\\Billing\\Orders\\Livewire\\OrdersLivewireServiceProvider",
   "requires": {
